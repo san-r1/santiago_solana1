@@ -16,7 +16,7 @@ async function main() {
   console.log("Creando tarea...");
 
   const tx = await program.methods
-    .crearTarea("Hola Solana! 🚀")
+    .crearTarea("Hola Solana! ")
     .accounts({
       tarea: tareaPubkey,
       usuario: user,
@@ -24,7 +24,7 @@ async function main() {
     })
     .rpc();
 
-  console.log("✅ LISTO!", tx);
+  console.log(" LISTO!", tx);
 }
 
 main();
